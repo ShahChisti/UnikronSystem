@@ -65,8 +65,57 @@ namespace Unikron_Testing
 
 
         }
+
+        [TestMethod]
+        public void FindMethodOK()
+        {
+            clsParthCustomer AnCustomer = new clsParthCustomer();
+            Boolean Found = false;
+            Int32 CustomerNo = 21;
+            Found = AnCustomer.Find(CustomerNo);
+            Assert.IsTrue(Found);
+
+        }
+
+        [TestMethod]
+        public void TestCustomerNoFound()
+        {
+            clsParthCustomer AnCustomer = new clsParthCustomer();
+            Boolean Found = false;
+            Boolean OK = true;
+            Int32 CustomerNO = 21;
+            Found = AnCustomer.Find(CustomerNO);
+            if (AnCustomer.CustomerNo != 21)
+            {
+                OK = false;
+            }
+
+            Assert.IsTrue(OK);
+        }
+
+       //   [TestMethod]
+        public void TestDate()
+        {
+            clsParthCustomer AnCustomer = new clsParthCustomer();
+            Boolean Found = false;
+            Boolean OK = true;
+            Int32 CustomerNO = 21;
+            Found = AnCustomer.Find(CustomerNO);
+            if (AnCustomer.Date != Convert.ToDateTime("07/07/2015");
+            {
+                OK = false;
+            }
+            Assert.IsTrue(OK);
+        }
     }
 }
+
+
+        
+    
+
+    
+    
         
 
   
