@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>UNIKRON</title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div>
+        <%-- Image link to the homepage--%>
+        <td><a href="HomePage.html"><img src="Images/Unikron.png" width="200" height="150" /></a></td>
+
+        <%--  Adding Title--%>
+        <center> <td><h1>Manager -> Edit Staff</h1></td> </center>
+
+        <center>
+            <legend>Edit Staff Details</legend>
+
+            <br />
+
+
+            <p>
+                <%-- label for the box, indicates to add details, each field has a label to show what that field requires--%>
+                <label>FirstName</label>
+                <input type="text" id="AddFirstname" value="" maxlength="10" min="1" />
+            </p>
+            <p>
+                <label>Surname</label>
+                <input type="text" id="AddSurename" value="" maxlength="10" min="1" />
+            </p>
+            <p>
+                <label>DOB</label>
+                <input type="text" id="AddDOB" value="" maxlength="10" min="10" />
+            </p>
+            <p>
+                <label>EMail</label>
+                <input type="text" id="AddEmail" value="" maxlength="30" min="16" />
+            </p>
+            <p>
+                <label>Date</label>
+                <input type="text" id="AddDate" value="" maxlength="10" min="10" />
+            </p>
+            <%--  Button to confirm edits, and then redirect to the staff menu--%>
+            <a href="StaffManagerMenu.html"> <input type="button" id="ConfirmEdit" value="Confirm Edit" /></a>
+
+
+
+        </center>
+
+</body>
+</html>
